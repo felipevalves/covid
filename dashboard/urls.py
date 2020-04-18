@@ -6,7 +6,8 @@ app_name = 'dashboard'
 
 urlpatterns = [
     path('', IndexTemplateView.as_view(), name='index'),
-    path('codiv/', BoletimListView.as_view(), name='boletim_list'),
+    path('covid/', BoletimListView.as_view(), name='boletim_list'),
+    path('dados/', views.importar_dados_covid, name='importar_dados'),
 
     # path('covid/', views.boletim_list, name='boletim_list')
 ]

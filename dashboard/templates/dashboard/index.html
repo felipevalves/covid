@@ -3,36 +3,7 @@
 {% block title %}Página Inicial {% endblock %}
 
 {% block conteudo %}
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Cadastrar Funcionário</h5>
-          <p class="card-text">
-            Cadastre aqui um novo <code>Funcionário</code>.
-          </p>
-          <a href="#"
-             class="btn btn-primary">
-            Novo Funcionário
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Dashboard Covid-19</h5>
-          <p class="card-text">
-            Veja aqui o dashboard sobre <code>Covid-19</code> registrados até o momento.
-          </p>
-          <a href="{% url 'dashboard:boletim_list' %}"
-             class="btn btn-primary">
-            Vá para DashBoard
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<body onload=window.location='covid'>
+
+</body>
 {% endblock %}
