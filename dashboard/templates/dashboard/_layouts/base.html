@@ -44,20 +44,29 @@
                       Boletim
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'dashboard:importar_dados' %}">
+                      Atualizar Dados
+                    </a>
+                </li>
             </ul>
 
         </div>
     </nav>
 
-    <!-- Bloco de conteúdo -->
-    {% block conteudo %}{% endblock %}
+
 
     <!-- Arquivos necessários para o Bootstrap -->
     <script src="{% static 'dashboard/js/jquery.min.js' %}"></script>
     <script src="{% static 'dashboard/js/bootstrap.min.js' %}"></script>
 
+
     <!-- Bloco de scripts -->
     {% block scripts %}{% endblock %}
+     <!-- Bloco de conteúdo -->
+    {% block conteudo %}{% endblock %}
+
+
 
   </body>
 </html>

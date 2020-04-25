@@ -31,6 +31,6 @@ class Boletim(models.Model):
     objetos = models.Manager()
 
     def __str__(self):
-        return self.data_boletim.strftime("%d/%m/%Y") + ' ' + self.municipio + '/' + self.estado
+        return '{} {}/{}'.format(self.data_boletim.strftime("%d/%m/%Y"), self.municipio, self.estado)
 
 

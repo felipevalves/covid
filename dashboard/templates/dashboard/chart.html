@@ -1,0 +1,17 @@
+{% extends 'dashboard/_layouts/base.html'%}
+
+{% block title %}Página Inicial {% endblock %}
+{% load static %}
+{% block scripts %}
+    <script type="text/javascript" src="{% static 'dashboard/fusioncharts/js/fusioncharts.js' %}"></script>
+    <script type="text/javascript" src="{% static 'dashboard/fusioncharts/js/fusioncharts.charts.js' %}"></script>
+    <script type="text/javascript" src="{% static 'dashboard/fusioncharts/js/themes/fusioncharts.theme.fusion.js' %}"></script>
+{% endblock %}
+{% block conteudo %}
+
+
+<body>
+    <div id="myFirstchart-container">{{ output|safe }}</div>
+</body>
+
+{% endblock %}

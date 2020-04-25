@@ -39,18 +39,20 @@
                 <th>Óbitos</th>
                 <th>Descartados</th>
                 <th>Em Investigação</th>
+                <th>Data</th>
               </tr>
               </thead>
 
               <tbody>
               {% for b in boletins %}
                 <tr>
-                  <td>{{ b.uf }}</td>
+                  <td>{{ b.estado }}</td>
                   <td>{{ b.municipio }}</td>
                   <td>{{ b.confirmados }}</td>
                   <td>{{ b.obitos }}</td>
                   <td>{{ b.descartados }}</td>
                   <td>{{ b.investigacao }}</td>
+                  <td>{{ b.data_boletim }}</td>
                 </tr>
               {% endfor %}
               </tbody>
